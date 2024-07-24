@@ -17,7 +17,7 @@ app.use(cors({
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],
 }));
-const uri = "mongodb+srv://omer:slbEJzELbfn59y0y@cluster0.iwxlpkc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const uri = "mongodb+srv://<user>:<password>@cluster0.iwxlpkc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 // MongoDB client
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
